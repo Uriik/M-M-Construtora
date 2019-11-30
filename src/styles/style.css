@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+
+
+body{
+    margin:0;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#app {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top:0px;
+    height: 100%;
+  }
+
+.titulos{
+  color: rgb(232, 76, 61);
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: start;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
+
+/* FLEX BOX */
+
+.flex{
+    display: flex;
+}
+.flex0{
+    flex:0;
+}
+.flex1{
+    flex:1;
+}
+.flex2{
+    flex:2;
+}
+.flex3{
+    flex:3;
+}
+.flex4{
+    flex:4;
+}
+.flex5{
+    flex:5;
+}
+
+.img-responsive{
+    width:100%;
+    height:auto;
+    margin:0;
+ }
+ section {
+    height: 100vh;
+  
+  }
+
+.column{
+    flex-direction: column;
+}
+.row {
+	flex-direction: row;
+}
+
+
+.flex-start{
+	align-self: flex-start;
+}
+
+.center {
+	align-items: center;
+}
+
+.flex-start {
+	align-items: flex-start;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+.flex-end {
+	align-items: flex-end;
+}
+
+.block{
+    display: block;
+}
+.flex-start-justify {
+	justify-content: flex-start;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.align-self{
+    align-self: flex-end;
+}
+
+
+/* GRID CSS */
+
+.grid{
+    display: grid;
+}
+
+/* .::::. Input .::::. */
+.input-default{
+    border:1px #04557D solid;
+    height:30px;
+    padding: 0 10px;
+    outline: none;
+    margin-top:5px;
+}
+.label-input{
+    flex-direction: column;
+    display: flex;
+    flex:1;
+    font-size: 0.7rem;
+    color:#04557D;
+    min-width: 350px;
+    margin-bottom: 10px;
+}
+.textarea-default{
+    height: 80px;
+}
+.btn-default{
+    background-color: #0E1D2E;
+    color:#fff;
+    border: 0;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+/*  .:::. espacamentos .:::. */
+.ml0{
+    margin-left:0;
+}
+.p-horizontal-50{
+padding:0 50px;
+}
