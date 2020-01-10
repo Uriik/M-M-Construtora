@@ -1,45 +1,65 @@
 <template>
-  <section class="column flex backgroundNo">
+  <section class="column flex backgroundNo" id="nossosServicos">
     <div class="flex0">
       <h1 class="titulos">nossos serviços</h1>
     </div>
     <div class="flex flex1 cards">
-      <div class="card flex1">
-        <div class="contentImagem">
-          <img class="img-responsive" src="@/assets/servicos/caca.jpg" alt />
+      <router-link to="/detalhes/0" class="card flex1">
+        <article>
+          <div class="contentImagem">
+            <img class="img-responsive" src="@/assets/servicos/caca.jpg" alt />
+          </div>
+          <div class="contentDescription">
+            <h3 class="subTitle">caça vazamentos</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+        </article>
+      </router-link>
+      <router-link to="/detalhes/1" class="card flex1">
+        <article>
+          <div class="contentImagem">
+            <img
+              class="img-responsive"
+              src="@/assets/servicos/demolicao.jpg"
+              alt
+            />
+          </div>
+          <div class="contentDescription">
+            <h3 class="subTitle">reformas em geral</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+        </article>
+      </router-link>
+      <router-link to="/detalhes/2" class="card flex1">
+        <div>
+          <div class="contentImagem">
+            <img
+              class="img-responsive"
+              src="@/assets/servicos/pintura.jpg"
+              alt
+            />
+          </div>
+          <div class="contentDescription">
+            <h3 class="subTitle">pintura</h3>
+            <p>Lorem Ipsum</p>
+          </div>
         </div>
-        <div class="contentDescription">
-          <a href="modal-caca-vazamento.vue"><h3 class="subTitle">caça vazamentos</h3></a>
-          <p>Lorem Ipsum</p>
-        </div>
-      </div>
-      <div class="card flex1">
-        <div class="contentImagem">
-          <img class="img-responsive" src="@/assets/servicos/demolicao.jpg" alt />
-        </div>
-        <div class="contentDescription">
-          <h3 class="subTitle">reformas em geral</h3>
-          <p>Lorem Ipsum</p>
-        </div>
-      </div>
-      <div class="card flex1">
-        <div class="contentImagem">
-          <img class="img-responsive" src="@/assets/servicos/pintura.jpg" alt />
-        </div>
-        <div class="contentDescription">
-          <h3 class="subTitle">pintura</h3>
-          <p>Lorem Ipsum</p>
-        </div>
-      </div>
-      <div class="card flex1">
-        <div class="contentImagem">
-          <img class="img-responsive" src="@/assets/servicos/reformas.jpg" alt />
-        </div>
-        <div class="contentDescription">
-          <h3 class="subTitle">contrução civil</h3>
-          <p>Lorem Ipsum</p>
-        </div>
-      </div>
+      </router-link>
+      <router-link to="/detalhes/3" class="card flex1">
+        <article>
+          <div class="contentImagem">
+            <img
+              class="img-responsive"
+              src="@/assets/servicos/reformas.jpg"
+              alt
+            />
+          </div>
+          <div class="contentDescription">
+            <h3 class="subTitle">contrução civil</h3>
+            <p>Lorem Ipsum</p>
+          </div>
+        </article>
+      </router-link>
     </div>
   </section>
 </template>
