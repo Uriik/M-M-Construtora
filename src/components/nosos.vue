@@ -9,7 +9,7 @@
           <img class="img-responsive" src="@/assets/servicos/caca.jpg" alt />
         </div>
         <div class="contentDescription">
-          <h3 class="subTitle">caça vazamentos</h3>
+          <a href="modal-caca-vazamento.vue"><h3 class="subTitle">caça vazamentos</h3></a>
           <p>Lorem Ipsum</p>
         </div>
       </div>

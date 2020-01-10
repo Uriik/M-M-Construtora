@@ -63,6 +63,27 @@
 
             <label class="label-input">
               <p>
+                Telefone
+                <span
+                  class="error"
+                  v-if="!$v.telefone.required && $v.telefone.$dirty"
+                >*Este campo é obrigatório!</span>
+                <span
+                  class="error"
+                  v-if="!$v.telefone.minLength"
+                >O telefone dever ter pelo menos {{$v.telefone.$params.minLength.min}} letters.</span>
+              </p>
+              <input
+                type="text"
+                class="input-default"
+                v-model="$v.telefone.$model"
+                name="telefone"
+                required="required"
+              />
+            </label>
+
+            <label class="label-input">
+              <p>
                 Email
                 <span
                   class="error"
@@ -152,6 +173,7 @@ export default {
   data() {
     return {
       nome: "",
+      telefone: "",
       email: "",
       assunto: "",
       mensagem: "",
@@ -160,6 +182,10 @@ export default {
   },
   validations: {
     nome: {
+      required,
+      minLength: minLength(3)
+    },
+      telefone: {
       required,
       minLength: minLength(3)
     },
@@ -222,7 +248,7 @@ ul > li {
   margin-bottom: 10px;
 }
 
-#fundo-importante {
+#fundo-importante{
   /* background-color: #f7f7f7; */
   /* background-image: linear-gradient(to left, #f7f7f7 60%, #fff 40%); */
 }

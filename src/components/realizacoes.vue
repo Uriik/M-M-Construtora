@@ -34,7 +34,7 @@
           <div class="test4">
             <img src="@/assets/realizacoes/caminho1415.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo4">lorem ipsum</h4>
+              
             </div>
           </div>
 
@@ -123,7 +123,6 @@ export default {};
 .titulo1,
 .titulo2,
 .titulo3,
-.titulo4,
 .titulo5,
 .titulo6,
 .titulo7,
