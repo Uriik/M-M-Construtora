@@ -7,8 +7,8 @@
     <div class="header-content">
       <h1>M&M</h1>
       <p class="ref">Construções e Reformas</p>
-      <p class="cubo">Lorem Ipsum is simply dummy</p>
-      <p class="monte">Lorem Ipsum is simply dummy</p>
+      <p class="cubo">Construtora á 15 anos no mercado</p>
+      <p class="monte">Venha conferir nossa jornada</p>
     </div>
 
   </header>

@@ -67,4 +67,10 @@ p.blocktext {
   margin-top: 50px;
   margin-bottom: 0;
 }
+
+@media (max-width:850px){
+  .img-section, .fotoSobre{
+    display: none;
+  }
+}
 </style>

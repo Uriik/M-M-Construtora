@@ -108,4 +108,8 @@ export default {};
 .contentImagem {
   margin-bottom: -6px;
 }
+
+@media(max-width:875px ){
+    
+}
 </style>

@@ -3,7 +3,7 @@
     <div class="flex ">
       <div class="flex1">
         <div class="fotoVazamento">
-          <span class="voltar" @click="voltar()"> Voltar</span><br />
+          <span class="voltar flex" @click="voltar()"> Voltar</span><br />
           <img :src="servicos[this.param].img" alt />
         </div>
       </div>
@@ -79,6 +79,18 @@
         </article>
       </div>
     </section>
+    <footer class="rodape flex containaer-rodape space-between center">
+    <div class="copyright">
+      <p>Copyright todos os direitos reservados - 2019</p>
+    </div>
+    <div class="dev">
+      <p>
+        Desenvolvido por:
+        <br />
+        <span class="meu-nome">Gabriel</span>
+      </p>
+    </div>
+  </footer>
   </section>
 </template>
 <script>
@@ -136,7 +148,7 @@ export default {
 </script>
 <style>
 section.cards-details {
-  height: 50vh;
+  /* height: 50vh; */
 }
 
 .backgrounduni {
@@ -150,6 +162,7 @@ section.cards-details {
 .textoVazamentos {
   flex-direction: column;
   right: 100vh;
+  margin-top: 7vh;
 }
 .textoForm {
   margin-right: 20px;
@@ -175,6 +188,9 @@ section.cards-details {
 .cards {
   margin: 0 50px;
   align-items: center;
+  align-items: flex-end;
+  margin-bottom: 10vh;
+
 }
 .cards article {
   cursor: pointer;
@@ -211,5 +227,28 @@ a.card {
 .voltar {
   cursor: pointer;
   color: #fff;
+}
+
+
+footer {
+  height: 15vh;
+  background: rgb(14, 29, 46);
+  padding: 0 50px;
+}
+
+.rodape {
+  color: white;
+}
+
+.text-rodape {
+  height: 100%;
+}
+
+.dev{
+    text-align:right;
+}
+
+.meu-nome{
+    font-weight: bold;
 }
 </style>

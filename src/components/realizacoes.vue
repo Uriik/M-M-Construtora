@@ -13,21 +13,21 @@
           <div class="test1">
             <img src="@/assets/realizacoes/cacavz.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo1">lorem ipsum</h4>
+              <h4 class="titulo1">Caça Vazamentos</h4>
             </div>
           </div>
 
           <div class="test2">
             <img src="@/assets/realizacoes/pintura.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo2">lorem ipsum</h4>
+              <h4 class="titulo2">Pintura</h4>
             </div>
           </div>
 
           <div class="test3">
             <img src="@/assets/realizacoes/alicerce.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo3">lorem ipsum</h4>
+              <h4 class="titulo3">Alicerces</h4>
             </div>
           </div>
 
@@ -41,35 +41,35 @@
           <div class="test5">
             <img src="@/assets/realizacoes/hidraulica.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo5">lorem ipsum</h4>
+              <h4 class="titulo5">Hidraulica</h4>
             </div>
           </div>
 
           <div class="test6">
             <img src="@/assets/realizacoes/eletrica.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo6">lorem ipsum</h4>
+              <h4 class="titulo6">Eletrica</h4>
             </div>
           </div>
 
           <div class="test7">
             <img src="@/assets/realizacoes/acabamentos.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo7">lorem ipsum</h4>
+              <h4 class="titulo7">Acabamentos</h4>
             </div>
           </div>
 
           <div class="test8">
             <img src="@/assets/realizacoes/alvenaria.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo8">lorem ipsum</h4>
+              <h4 class="titulo8">Alvenaria</h4>
             </div>
           </div>
 
           <div class="test9">
             <img src="@/assets/realizacoes/pisos.jpg" class="img-figure" />
             <div>
-              <h4 class="titulo9">lorem ipsum</h4>
+              <h4 class="titulo9">Pisos</h4>
             </div>
           </div>
         </div>
