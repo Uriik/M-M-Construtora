@@ -1,7 +1,7 @@
 <template>
   <section class="column flex backgroundNo" id="nossosServicos">
     <div class="flex0">
-      <h1 class="titulos">nossos serviços</h1>
+      <h1 class="tituloNo">nossos serviços</h1>
     </div>
     <div class="flex flex1 cards">
       <router-link to="/detalhes/0" class="card flex1">
@@ -93,11 +93,20 @@ export default {};
   margin: 0;
   padding: 0;
 }
-
+.tituloNo{
+  color: rgb(232, 76, 61);
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: start;
+  margin-left: 50px;
+  text-transform: uppercase;
+}
 .contentDescription {
   background: rgb(4, 85, 125);
   color: rgb(255, 255, 255);
   padding: 15px 5px;
+  align-items: stretch;
+  
 }
 
 .contentDescription p {
@@ -109,7 +118,64 @@ export default {};
   margin-bottom: -6px;
 }
 
-@media(max-width:875px ){
-    
+@media screen and (max-width:1000px ){
+    img, .contentImagem{
+      display: flex;
+      flex-wrap: wrap;
+    }
 }
+@media screen and (max-width: 990px){
+     .contentDescription, .cards{
+      display: flex;
+      /* flex-direction: column !important; */
+    }
+}
+@media screen and (max-width: 990px){
+      a, .cards{
+     
+      /* flex-direction: column !important; */
+      width: 100%;
+      align-items: flex-start;
+    }
+}
+
+@media screen and (max-width:1000px ){
+  .backgroundNo{
+    background-repeat: repeat;
+  }
+}
+@media screen and (max-width:1000px ){
+  h1, .titutloNo{
+    color:rgb(255, 255, 255) !important;
+  }
+}
+@media screen and (max-width: 990px){
+     p{
+      display: none;
+      /* flex-direction: column !important; */
+      
+    }
+}
+
+@media screen and (max-width: 550px){
+      .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 550px){
+    .card{
+      flex: 0 1 40%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .subTitle{
+      font-size: 1.0rem;
+      
+    }
+}
+
+
 </style>
