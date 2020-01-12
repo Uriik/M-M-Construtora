@@ -1,16 +1,15 @@
 <template>
   <header class="v-header container">
     <div class="fullscreen-video-wrap">
-      <video  src="@/assets/videobg.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
+      <video src="@/assets/videobg.mp4" autoplay="true" loop="true" playsinline="true" muted="true"></video>
     </div>
     <div class="header-overlay"></div>
     <div class="header-content">
       <h1>M&M</h1>
       <p class="ref">Construções e Reformas</p>
-      <p class="cubo">Construtora á 15 anos no mercado</p>
+      <p class="cubo">Construtora há 15 anos no mercado</p>
       <p class="monte">Venha conferir nossa jornada</p>
     </div>
-
   </header>
 </template>
 
@@ -26,8 +25,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 .cubo {
   margin-top: 20px;
   font-weight: 800;
@@ -44,29 +41,27 @@ export default {
   margin-left: 0;
   font-size: 1.5rem;
 }
-p{
+p {
   margin: 0;
-
 }
 
-
-.v-header{
+.v-header {
   height: 100vh;
   display: flex;
   align-items: center;
   color: #fff;
 }
 
-.container{
+.container {
   max-width: 960px;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin:auto;
-  text-align:center;
+  margin: auto;
+  text-align: center;
 }
 
-.fullscreen-video-wrap{
-  position:absolute;
+.fullscreen-video-wrap {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -78,21 +73,21 @@ p{
   object-fit: scale-down;
 }
 
-.fullscreen-video-wrap video{
+.fullscreen-video-wrap video {
   min-width: 100%;
   min-height: 100%;
 }
 
-.header-overlay{
+.header-overlay {
   height: 100vh;
   width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(14, 29, 49, 0.8)
+  background: rgba(14, 29, 49, 0.8);
 }
 
-.header-content{
+.header-content {
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -103,16 +98,13 @@ p{
   font-weight: 800;
   color: rgb(232, 76, 61);
   margin-bottom: 0;
-  font-size: 3.0rem;
+  font-size: 3rem;
 }
 
-
-@media(max-width: 960px){
-  .container{
+@media (max-width: 960px) {
+  .container {
     padding-right: 3rem;
     padding-left: 3rem;
   }
 }
-
-
- </style>
+</style>

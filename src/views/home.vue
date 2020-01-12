@@ -1,36 +1,39 @@
 <template>
-<div>
-    <inicio/>
-    <sobrenos/>
-    <nosos/>
-    <realizacoes/>
-    <contato/>
-    <rodape/>
-</div>
+  <div>
+    <buttonWhatsapp />
+    <inicio />
+    <sobrenos />
+    <nosos />
+    <realizacoes />
+    <contato />
+    <rodape />
+  </div>
 </template>
 
 <script>
-import inicio from '@/components/inicio.vue'
-import sobrenos from '@/components/sobrenos.vue'
-import nosos from '@/components/nosos.vue'
-import realizacoes from '@/components/realizacoes.vue'
-import contato from '@/components/contato.vue'
-import rodape from '@/components/rodape.vue'
+import buttonWhatsapp from "@/components/buttonWhatsapp.vue";
+
+import inicio from "@/components/inicio.vue";
+import sobrenos from "@/components/sobrenos.vue";
+import nosos from "@/components/nosos.vue";
+import realizacoes from "@/components/realizacoes.vue";
+import contato from "@/components/contato.vue";
+import rodape from "@/components/rodape.vue";
 // import GoogleMapLoader from './components/GoogleMapLoader.vue'
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
+    buttonWhatsapp,
     inicio,
     sobrenos,
     nosos,
     realizacoes,
     contato,
-    rodape,
+    rodape
   }
-}
+};
 </script>
 
 <style>
-
 </style>

@@ -147,9 +147,9 @@ export default {
 };
 </script>
 <style>
-section.cards-details {
-  /* height: 50vh; */
-}
+/* section.cards-details {
+  height: 50vh;
+} */
 
 .backgrounduni {
   background-image: url("../assets/grupo25.svg");

@@ -33,9 +33,7 @@
 
           <div class="test4">
             <img src="@/assets/realizacoes/caminho1415.jpg" class="img-figure" />
-            <div>
-              
-            </div>
+            <div></div>
           </div>
 
           <div class="test5">
@@ -75,6 +73,32 @@
         </div>
       </div>
     </div>
+    <div class="mobile-list">
+      <article>
+        <h4 class>Caça Vazamentos</h4>
+      </article>
+      <article>
+        <h4 class>Pintura</h4>
+      </article>
+      <article>
+        <h4 class>Alicerces</h4>
+      </article>
+      <article>
+        <h4>Hidraulica</h4>
+      </article>
+      <article>
+        <h4>Eletrica</h4>
+      </article>
+      <article>
+        <h4>Acabamentos</h4>
+      </article>
+      <article>
+        <h4>Alvenaria</h4>
+      </article>
+      <article>
+        <h4>Pisos</h4>
+      </article>
+    </div>
   </section>
 </template>
 
@@ -87,6 +111,9 @@ export default {};
   background-image: url("../assets/grupo35.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.mobile-list {
+  display: none;
 }
 
 .testando {
@@ -104,17 +131,15 @@ export default {};
   width: 1250px;
 }
 
-
-  .container-test {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(6, 10vh);
-    row-gap: 0.5em;
-    column-gap: 0.5em;
-    position: relative;
-    width: 200vh;
-  }
-
+.container-test {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 10vh);
+  row-gap: 0.5em;
+  column-gap: 0.5em;
+  position: relative;
+  width: 200vh;
+}
 
 .flex {
   display: flex;
@@ -173,13 +198,11 @@ h4 {
   margin: 0;
 }
 
-
-  .test1,
-  .titulo1 {
-    grid-column: 1/3;
-    grid-row: 1/7;
-  }
-
+.test1,
+.titulo1 {
+  grid-column: 1/3;
+  grid-row: 1/7;
+}
 
 .img-figure {
   display: block;
@@ -188,78 +211,93 @@ h4 {
   object-fit: cover;
 }
 
+.test2,
+.titulo2 {
+  grid-column: 3/7;
+  grid-row: 1/4;
+}
 
-  .test2,
-  .titulo2 {
-    grid-column: 3/7;
-    grid-row: 1/4;
+.test3,
+.titulo3 {
+  grid-column: 3/5;
+  grid-row: 4/7;
+}
+
+.test4,
+.titulo4 {
+  grid-column: 5/7;
+  grid-row: 4/7;
+}
+
+.test5,
+.titulo5 {
+  grid-column: 7/9;
+  grid-row: 1/4;
+}
+
+.test6,
+.titulo6 {
+  grid-column: 7/9;
+  grid-row: 4/7;
+}
+
+.test7,
+.titulo7 {
+  grid-column: 9/11;
+  grid-row: 1/4;
+}
+
+.test8,
+.titulo8 {
+  grid-column: 9/11;
+  grid-row: 4/7;
+}
+
+.test9,
+.titulo9 {
+  grid-column: 11/13;
+  grid-row: 1/7;
+}
+
+@media screen and (max-width: 1300px) {
+  .container-test {
+    width: 90%;
+    height: 90%;
   }
-
-
-
-  .test3,
-  .titulo3 {
-    grid-column: 3/5;
-    grid-row: 4/7;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .backgroundRe {
+    height: auto;
   }
-
-
-  .test4,
-  .titulo4 {
-    grid-column: 5/7;
-    grid-row: 4/7;
+  .mobile-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
   }
-
-
-
-  .test5,
-  .titulo5 {
-    grid-column: 7/9;
-    grid-row: 1/4;
+  .mobile-list article {
+    padding: 20px;
+    background-color: #e84c3d;
+    flex: 1;
+    color: #fff;
+    margin-bottom: 5px;
   }
-
-
-
-  .test6,
-  .titulo6 {
-    grid-column: 7/9;
-    grid-row: 4/7;
+  .mobile-list article h4 {
+    text-align: left;
   }
-
-
-  .test7,
-  .titulo7 {
-    grid-column: 9/11;
-    grid-row: 1/4;
+  .backgroundRe .testando {
+    display: none;
   }
-
-
-  .test8,
-  .titulo8 {
-    grid-column: 9/11;
-    grid-row: 4/7;
+  h1.titulos {
+    margin-left: 15px;
   }
+}
 
-
-  .test9,
-  .titulo9 {
-    grid-column: 11/13;
-    grid-row: 1/7;
-  }
-
-
-  @media screen and (max-width:1300px ){
-    .container-test{
-      width: 90%;
-      height: 90%;
-    }
-  }
-
-  /* @media screen and (max-width:1000px ){
+/* @media screen and (max-width:1000px ){
     .titulo1,.titulo2,.titulo3,.titulo4,.titulo5,.titulo6,.titulo7,.titulo8,.titulo9{
        width: 90%;
       height: 90%;
     }
   }   */
-
 </style>

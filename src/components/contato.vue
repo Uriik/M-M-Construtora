@@ -9,6 +9,15 @@
           <li class="telefone englobando">
             <i class="fas fa-phone-square-alt informacoes-footer"></i>telefone (13) 97414-2011
           </li>
+          <li>
+            <address>
+              <i class="fas fa-envelope-open"></i>
+              <a
+                href="mailto:mmconstrucoes869@gmail.com"
+                class="email-color"
+              >mmconstrucoes869@gmail.com</a>
+            </address>
+          </li>
           <li class="facebook englobando">
             <i class="fab fa-facebook informacoes-footer"></i>@m&mconstrutora
           </li>
@@ -39,7 +48,7 @@
           </p>
         </div>-->
         <div class="flex flex0 formulario column">
-          <form class="formulario-contato flex column" >
+          <form class="formulario-contato flex column">
             <label class="label-input">
               <p>
                 Nome
@@ -166,7 +175,8 @@
   </section>
 </template>
 
-<script src= "https://smtpjs.com/v3/smtp.js"> </script>
+<script src= "https://smtpjs.com/v3/smtp.js">
+</script>
 <script>
 import { required, email, minLength } from "vuelidate/lib/validators";
 export default {
@@ -185,7 +195,7 @@ export default {
       required,
       minLength: minLength(3)
     },
-      telefone: {
+    telefone: {
       required,
       minLength: minLength(3)
     },
@@ -202,23 +212,22 @@ export default {
       required,
       minLength: minLength(10)
     }
-  },
-  
+  }
 };
 
 function sendEmail() {
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "veronicaribeirodesigner@gmail.com",
-        Password: "9aa49fdf-348b-48fc-add9-2d573712a33b",
-        To: this.email,
-        From: "veronicaribeirodesigner@gmail.com",
-        port:2525,
-        Subject: this.assunto,
-        Body: this.mensagem,
-        TLS: Required
-      }).then(message => alert("mail sent successfully"));
-    }
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "veronicaribeirodesigner@gmail.com",
+    Password: "9aa49fdf-348b-48fc-add9-2d573712a33b",
+    To: this.email,
+    From: "veronicaribeirodesigner@gmail.com",
+    port: 2525,
+    Subject: this.assunto,
+    Body: this.mensagem,
+    TLS: Required
+  }).then(message => alert("mail sent successfully"));
+}
 </script>
 
 
@@ -240,6 +249,10 @@ ul > li {
   font-size: 1rem;
   color: #f7f;
 }
+a.email-color {
+  color: #e84c3d;
+  margin-left: 5px;
+}
 .informacoes-footer {
   margin-right: 10px;
 }
@@ -248,7 +261,7 @@ ul > li {
   margin-bottom: 10px;
 }
 
-#fundo-importante{
+#fundo-importante {
   /* background-color: #f7f7f7; */
   /* background-image: linear-gradient(to left, #f7f7f7 60%, #fff 40%); */
 }
@@ -276,6 +289,32 @@ ul > li {
 
 p {
   margin: 0;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  section#fundo-importante {
+    background-color: #f7f7f7;
+    height: 100%;
+    padding-bottom: 15px;
+  }
+  #fundo-importante .row {
+    flex-direction: column;
+  }
+  #fundo-importante.background-tudo > .contato.m10.row {
+    margin-left: 15px;
+  }
+  #fundo-importante {
+    flex-direction: column;
+  }
+  .contatos {
+    flex-direction: column;
+  }
+  .contatos.p-horizontal-50 {
+    padding: 0 15px;
+  }
+  section#fundo-importante .bgform {
+    display: none;
+  }
 }
 </style>
 

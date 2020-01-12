@@ -33,11 +33,21 @@ footer {
   height: 100%;
 }
 
-.dev{
-    text-align:right;
+.dev {
+  text-align: right;
 }
 
-.meu-nome{
-    font-weight: bold;
+.meu-nome {
+  font-weight: bold;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  footer.rodape {
+    height: auto;
+    flex-direction: column;
+  }
+  footer.rodape .dev {
+    text-align: center;
+  }
 }
 </style>

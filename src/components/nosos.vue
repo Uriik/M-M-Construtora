@@ -18,11 +18,7 @@
       <router-link to="/detalhes/1" class="card flex1">
         <article>
           <div class="contentImagem">
-            <img
-              class="img-responsive"
-              src="@/assets/servicos/demolicao.jpg"
-              alt
-            />
+            <img class="img-responsive" src="@/assets/servicos/demolicao.jpg" alt />
           </div>
           <div class="contentDescription">
             <h3 class="subTitle">reformas em geral</h3>
@@ -33,14 +29,10 @@
       <router-link to="/detalhes/2" class="card flex1">
         <div>
           <div class="contentImagem">
-            <img
-              class="img-responsive"
-              src="@/assets/servicos/pintura.jpg"
-              alt
-            />
+            <img class="img-responsive" src="@/assets/servicos/pintura.jpg" alt />
           </div>
           <div class="contentDescription">
-            <h3 class="subTitle">pintura</h3>
+            <h3 class="subTitle">pinturas e texturas</h3>
             <p>Lorem Ipsum</p>
           </div>
         </div>
@@ -48,11 +40,7 @@
       <router-link to="/detalhes/3" class="card flex1">
         <article>
           <div class="contentImagem">
-            <img
-              class="img-responsive"
-              src="@/assets/servicos/reformas.jpg"
-              alt
-            />
+            <img class="img-responsive" src="@/assets/servicos/reformas.jpg" alt />
           </div>
           <div class="contentDescription">
             <h3 class="subTitle">contrução civil</h3>
@@ -93,7 +81,7 @@ export default {};
   margin: 0;
   padding: 0;
 }
-.tituloNo{
+.tituloNo {
   color: rgb(232, 76, 61);
   font-weight: 800;
   font-size: 2rem;
@@ -106,7 +94,6 @@ export default {};
   color: rgb(255, 255, 255);
   padding: 15px 5px;
   align-items: stretch;
-  
 }
 
 .contentDescription p {
@@ -118,64 +105,76 @@ export default {};
   margin-bottom: -6px;
 }
 
-@media screen and (max-width:1000px ){
-    img, .contentImagem{
-      display: flex;
-      flex-wrap: wrap;
-    }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .backgroundNo {
+    background-size: cover;
+    height: auto;
+  }
+  .backgroundNo h1.tituloNo {
+    color: #fff;
+  }
+  .backgroundNo .cards {
+    flex-wrap: wrap;
+    margin: 0 15px;
+  }
+  h1.tituloNo {
+    margin-left: 15px;
+  }
+  .cards a {
+    margin-bottom: 20px;
+  }
 }
-@media screen and (max-width: 990px){
-     .contentDescription, .cards{
-      display: flex;
-      /* flex-direction: column !important; */
-    }
+/* 
+@media screen and (max-width: 1000px) {
+  img,
+  .contentImagem {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
-@media screen and (max-width: 990px){
-      a, .cards{
-     
-      /* flex-direction: column !important; */
-      width: 100%;
-      align-items: flex-start;
-    }
+@media screen and (max-width: 990px) {
+  .contentDescription,
+  .cards {
+    display: flex;
+  }
 }
+@media screen and (max-width: 990px) {
+  a,
+  .cards {
+    width: 100%;
+    align-items: flex-start;
+  }
+  p {
+    display: none;
+  }
+  .subTitle {
+    font-size: 1rem;
+  }
+} */
 
-@media screen and (max-width:1000px ){
-  .backgroundNo{
+/* @media screen and (max-width: 1000px) {
+  .backgroundNo {
     background-repeat: repeat;
   }
 }
-@media screen and (max-width:1000px ){
-  h1, .titutloNo{
-    color:rgb(255, 255, 255) !important;
+@media screen and (max-width: 1000px) {
+  h1,
+  .titutloNo {
+    color: rgb(255, 255, 255) !important;
   }
 }
-@media screen and (max-width: 990px){
-     p{
-      display: none;
-      /* flex-direction: column !important; */
-      
-    }
-}
 
-@media screen and (max-width: 550px){
-      .cards{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+@media screen and (max-width: 550px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
-@media screen and (max-width: 550px){
-    .card{
-      flex: 0 1 40%;
-    }
-}
-
-@media screen and (max-width: 990px){
-    .subTitle{
-      font-size: 1.0rem;
-      
-    }
-}
-
-
+@media screen and (max-width: 550px) {
+  .card {
+    flex: 0 1 40%;
+  }
+} */
 </style>
