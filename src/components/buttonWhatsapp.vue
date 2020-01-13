@@ -13,8 +13,8 @@ export default {
 <style>
 .whatsapp {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
+  bottom: 20px;
+  right: 20px;
   background-color: #fff;
   width: 70px;
   height: 70px;
