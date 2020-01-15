@@ -8,63 +8,79 @@
     </div>
 
     <div class="testando grid">
+      <div>
+        <!-- <button @click="showSingle">Show single picture.</button>
+        <button @click="showMultiple">Show a group of pictures.</button> -->
+        <VueEasyLightbox
+          :visible="visible"
+          :imgs="imgs"
+          :index="index"
+          @hide="handleHide"
+        ></VueEasyLightbox>
+      </div>
       <div class>
         <div class="container-test">
-          <div class="test1">
+          <div class="test1" @click="showMultiple(0)">
             <img src="@/assets/realizacoes/cacavz.jpg" class="img-figure" />
             <div>
               <h4 class="titulo1">Caça Vazamentos</h4>
             </div>
           </div>
 
-          <div class="test2">
+          <div class="test2" @click="showMultiple(1)">
             <img src="@/assets/realizacoes/pintura.jpg" class="img-figure" />
             <div>
               <h4 class="titulo2">Pintura</h4>
             </div>
           </div>
 
-          <div class="test3">
+          <div class="test3" @click="showMultiple(2)">
             <img src="@/assets/realizacoes/alicerce.jpg" class="img-figure" />
             <div>
               <h4 class="titulo3">Alicerces</h4>
             </div>
           </div>
 
-          <div class="test4">
-            <img src="@/assets/realizacoes/caminho1415.jpg" class="img-figure" />
+          <div class="test4" @click="showMultiple(3)">
+            <img
+              src="@/assets/realizacoes/caminho1415.jpg"
+              class="img-figure"
+            />
             <div></div>
           </div>
 
-          <div class="test5">
+          <div class="test5" @click="showMultiple(4)">
             <img src="@/assets/realizacoes/hidraulica.jpg" class="img-figure" />
             <div>
               <h4 class="titulo5">Hidraulica</h4>
             </div>
           </div>
 
-          <div class="test6">
+          <div class="test6" @click="showMultiple(5)">
             <img src="@/assets/realizacoes/eletrica.jpg" class="img-figure" />
             <div>
               <h4 class="titulo6">Eletrica</h4>
             </div>
           </div>
 
-          <div class="test7">
-            <img src="@/assets/realizacoes/acabamentos.jpg" class="img-figure" />
+          <div class="test7" @click="showMultiple(6)">
+            <img
+              src="@/assets/realizacoes/acabamentos.jpg"
+              class="img-figure"
+            />
             <div>
               <h4 class="titulo7">Acabamentos</h4>
             </div>
           </div>
 
-          <div class="test8">
+          <div class="test8" @click="showMultiple(7)">
             <img src="@/assets/realizacoes/alvenaria.jpg" class="img-figure" />
             <div>
               <h4 class="titulo8">Alvenaria</h4>
             </div>
           </div>
 
-          <div class="test9">
+          <div class="test9" @click="showMultiple(8)">
             <img src="@/assets/realizacoes/pisos.jpg" class="img-figure" />
             <div>
               <h4 class="titulo9">Pisos</h4>
@@ -103,7 +119,48 @@
 </template>
 
 <script>
-export default {};
+import VueEasyLightbox from "vue-easy-lightbox";
+
+export default {
+  data() {
+    return {
+      imgs: "", // Img Url , string or Array
+      visible: false,
+      index: 0 // default
+    };
+  },
+  components: {
+    VueEasyLightbox
+  },
+  methods: {
+    showSingle() {
+      this.imgs = "http://via.placeholder.com/350x150";
+      this.show();
+    },
+    showMultiple(numCat) {
+      this.imgs = [
+        // 0 = caça vazamento
+        [
+          require("../assets/realizacoes/cacavz.jpg"),
+          "http://via.placeholder.com/500x500"
+        ],
+
+        // 1 = pintura
+        ["http://via.placeholder.com/350x150",
+        "http://via.placeholder.com/350x150"]
+      ];
+      this.imgs = this.imgs[numCat];
+      this.index = 1; // index of imgList
+      this.show();
+    },
+    show() {
+      this.visible = true;
+    },
+    handleHide() {
+      this.visible = false;
+    }
+  }
+};
 </script>
 
 <style>
