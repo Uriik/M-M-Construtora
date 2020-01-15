@@ -123,7 +123,7 @@ export default {
           img: require("@/assets/servicos/pintura.jpg"),
 
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has        survived not only five centuries, but also the leap into electronic typesettin Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has        survived not only five centuries, but also the leap into electronic typesettin"
+            "Atuamos na area de pintura, contando com profissionais que executam todo o trabalho com muita limpeza, capricho, e um melhor acabamento. Nosso maior comprometimento e esta sempre a disposição de nossos, clientes para melhor atendelos, com garantia em todos nossos serviços!! "
         },
         {
           cd: 3,
@@ -131,7 +131,7 @@ export default {
           img: require("@/assets/servicos/reformas.jpg"),
 
           description:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has        survived not only five centuries, but also the leap into electronic typesettin Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has        survived not only five centuries, but also the leap into electronic typesettin"
+            "Serviços de estruturas em concreto, Alvenaria, Revestimento e ceramico, gesso, entre outras Atividades."
         }
       ]
     };
@@ -190,6 +190,7 @@ export default {
   align-items: center;
   align-items: flex-end;
   margin-bottom: 10vh;
+  
 
 }
 .cards article {
@@ -253,9 +254,7 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  img{
-   display: none; 
-  }
+ 
   .textoForm{
     color: white;
   }
@@ -271,6 +270,10 @@ footer {
   .backgroundNo .cards {
     flex-wrap: wrap;
     margin: 0 15px;
+    margin-bottom: 20px;
+  }
+  .fotoVazamento{
+    display: none;
   }
 }
 </style>

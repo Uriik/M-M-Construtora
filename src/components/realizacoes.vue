@@ -154,59 +154,59 @@ export default {
           require("../assets/realizacoes/pintura/pint5.jpg"),
           
         ],
-        // 2 = alicerces 
-        [
-          require("../assets/realizacoes/alicerce/alice1.jpg"),
-          require("../assets/realizacoes/alicerce/alice1.jpg"),
-        ],
+        // // 2 = alicerces 
+        // [
+        //   require("../assets/realizacoes/alicerce/alice1.jpg"),
+        //   require("../assets/realizacoes/alicerce/alice1.jpg"),
+        // ],
 
         
-      // 3 = balela
-        [
-          require(""),
-          require("")
+      // // 3 = balela
+      //   [
+      //     require(""),
+      //     require("")
           
-        ],
-        // 4 = hidraulica
-        [
-          require("../assets/realizacoes/hidraulica/hid1.jpg"),
-          require("../assets/realizacoes/hidraulica/hid2.jpg"),
-          require("../assets/realizacoes/hidraulica/hid3.jpg"), 
+      //   ],
+      //   // 4 = hidraulica
+      //   [
+      //     require("../assets/realizacoes/hidraulica/hid1.jpg"),
+      //     require("../assets/realizacoes/hidraulica/hid2.jpg"),
+      //     require("../assets/realizacoes/hidraulica/hid3.jpg"), 
           
-        ],
+      //   ],
 
-         // 5 = elétrica
-        [
-          require("../assets/realizacoes/acabamentos/acab1.jpg"), 
-          require("../assets/realizacoes/acabamentos/acab1.jpg"),
+      //    // 5 = elétrica
+      //   [
+      //     require("../assets/realizacoes/acabamentos/acab1.jpg"), 
+      //     require("../assets/realizacoes/acabamentos/acab1.jpg"),
           
-        ],
+      //   ],
 
-        // 6 = acabamentos
-        [
-          require("../assets/realizacoes/acabamentos/acab1.jpg"),
-          require("../assets/realizacoes/acabamentos/acab2.jpg"),
-          require("../assets/realizacoes/acabamentos/acab3.jpg"),
-          require("../assets/realizacoes/acabamentos/acab4.jpg"),    
+      //   // 6 = acabamentos
+      //   [
+      //     require("../assets/realizacoes/acabamentos/acab1.jpg"),
+      //     require("../assets/realizacoes/acabamentos/acab2.jpg"),
+      //     require("../assets/realizacoes/acabamentos/acab3.jpg"),
+      //     require("../assets/realizacoes/acabamentos/acab4.jpg"),    
           
-        ],
+      //   ],
 
-        [
-        // 7 = alvenaria
-        require("../assets/realizacoes/alvenaria/alv1.jpg"),
-        require("../assets/realizacoes/alvenaria/alv1.jpg"),
+      //   [
+      //   // 7 = alvenaria
+      //   require("../assets/realizacoes/alvenaria/alv1.jpg"),
+      //   require("../assets/realizacoes/alvenaria/alv1.jpg"),
 
-        ],
+      //   ],
 
-        [
-        // 8 = pisos
-        require("../assets/realizacoes/pisos/pis1.jpg"),
-        require("../assets/realizacoes/pisos/pis2.jpg"),
-        require("../assets/realizacoes/pisos/pis3.jpg"),
-        require("../assets/realizacoes/pisos/pis4.jpg"),
-        require("../assets/realizacoes/pisos/pis5.jpg"),
+      //   [
+      //   // 8 = pisos
+      //   require("../assets/realizacoes/pisos/pis1.jpg"),
+      //   require("../assets/realizacoes/pisos/pis2.jpg"),
+      //   require("../assets/realizacoes/pisos/pis3.jpg"),
+      //   require("../assets/realizacoes/pisos/pis4.jpg"),
+      //   require("../assets/realizacoes/pisos/pis5.jpg"),
 
-        ],
+      //   ],
       ];
        
       this.imgs = this.imgs[numCat];
