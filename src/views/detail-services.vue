@@ -57,7 +57,7 @@
               />
             </div>
             <div class="contentDescription">
-              <h3 class="subTitle">pintura</h3>
+              <h3 class="subTitle">pinturas e texturas</h3>
               <p>Lorem Ipsum</p>
             </div>
           </div>
@@ -250,5 +250,27 @@ footer {
 
 .meu-nome{
     font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  img{
+   display: none; 
+  }
+  .textoForm{
+    color: white;
+  }
+  .tituloUnico{
+    color: white
+  }
+  div.flex1{
+    
+  }
+  .fotoVazamento{
+
+  }
+  .backgroundNo .cards {
+    flex-wrap: wrap;
+    margin: 0 15px;
+  }
 }
 </style>

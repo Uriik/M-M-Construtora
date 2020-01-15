@@ -6,7 +6,7 @@
     <div class="header-overlay"></div>
     <div class="header-content">
       <h1>M&M</h1>
-      <p class="ref">Construções e Reformas</p>
+      <p class="ref">Construção e Reformas</p>
       <p class="cubo">Construtora há 15 anos no mercado</p>
       <p class="monte">Venha conferir nossa jornada</p>
     </div>
