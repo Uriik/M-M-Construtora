@@ -13,7 +13,7 @@
             <address>
               <i class="fas fa-envelope-open"></i>
               <a
-                href="mailto:mmconstrucoes869@gmail.com"
+                href="mailto:mmconstrucao013@gmail.com"
                 class="email-color"
               >mmconstrucoes869@gmail.com</a>
             </address>
@@ -22,7 +22,7 @@
             <i class="fab fa-facebook informacoes-footer"></i>@m&mconstrutora
           </li>
           <li class="instagram englobando">
-            <i class="fab fa-instagram informacoes-footer"></i>memcontrutora.com.br
+            <i class="fab fa-instagram informacoes-footer"></i>memconstrutora.com.br
           </li>
           <li class="endereco">
             <i class="fas fa-map-marker-alt informacoes-footer"></i>Rua Doutor Ernesto Vergara n°971

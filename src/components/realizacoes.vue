@@ -43,10 +43,11 @@
 
           <div class="test4">
             <img
-              src="@/assets/realizacoes/caminho1415.jpg"
-              class="img-figure"
-            />
-            <div></div>
+            
+              src="@/assets/realizacoes/caminho1415.jpg" class="img-figure" />
+            <div>
+              
+            </div>
           </div>
 
           <div class="test5" @click="showMultiple(4)">
@@ -90,28 +91,38 @@
       </div>
     </div>
     <div class="mobile-list">
-      <article>
+      <div>
+        <!-- <button @click="showSingle">Show single picture.</button>
+        <button @click="showMultiple">Show a group of pictures.</button> -->
+        <VueEasyLightbox
+          :visible="visible"
+          :imgs="imgs"
+          :index="index"
+          @hide="handleHide"
+        ></VueEasyLightbox>
+      </div>
+      <article @click="showMultiple(0)">
         <h4 class>Caça Vazamentos</h4>
       </article>
-      <article>
-        <h4 class>Pintura</h4>
+      <article @click="showMultiple(1)">
+        <h4 class>Pintura e texturas</h4>
       </article>
-      <article>
+      <article @click="showMultiple(2)">
         <h4 class>Alicerces</h4>
       </article>
-      <article>
+      <article @click="showMultiple(4)">
         <h4>Hidraulica</h4>
       </article>
-      <article>
+      <article @click="showMultiple(5)"> 
         <h4>Eletrica</h4>
       </article>
-      <article>
+      <article @click="showMultiple(6)">
         <h4>Acabamentos</h4>
       </article>
-      <article>
+      <article @click="showMultiple(7)">
         <h4>Alvenaria</h4>
       </article>
-      <article>
+      <article @click="showMultiple(8)">
         <h4>Pisos</h4>
       </article>
     </div>
@@ -154,59 +165,58 @@ export default {
           require("../assets/realizacoes/pintura/pint5.jpg"),
           
         ],
-        // // 2 = alicerces 
-        // [
-        //   require("../assets/realizacoes/alicerce/alice1.jpg"),
-        //   require("../assets/realizacoes/alicerce/alice1.jpg"),
-        // ],
+        // 2 = alicerces 
+        [
+          require("../assets/realizacoes/alicerce/alice1.jpg"),
+          require("../assets/realizacoes/alicerce/alice1.jpg"),
+        ],
 
         
-      // // 3 = balela
-      //   [
-      //     require(""),
-      //     require("")
+      // 3 = balela
+        [
+          require("../assets/realizacoes/alicerce/alice1.jpg"),
+                    
+        ],
+        // 4 = hidraulica
+        [
+          require("../assets/realizacoes/hidraulica/hid1.jpg"),
+          require("../assets/realizacoes/hidraulica/hid2.jpg"),
+          require("../assets/realizacoes/hidraulica/hid3.jpg"), 
           
-      //   ],
-      //   // 4 = hidraulica
-      //   [
-      //     require("../assets/realizacoes/hidraulica/hid1.jpg"),
-      //     require("../assets/realizacoes/hidraulica/hid2.jpg"),
-      //     require("../assets/realizacoes/hidraulica/hid3.jpg"), 
+        ],
+
+         // 5 = elétrica
+        [
+          require("../assets/realizacoes/acabamentos/acab1.jpg"), 
+          require("../assets/realizacoes/acabamentos/acab1.jpg"),
           
-      //   ],
+        ],
 
-      //    // 5 = elétrica
-      //   [
-      //     require("../assets/realizacoes/acabamentos/acab1.jpg"), 
-      //     require("../assets/realizacoes/acabamentos/acab1.jpg"),
+        // 6 = acabamentos
+        [
+          require("../assets/realizacoes/acabamentos/acab1.jpg"),
+          require("../assets/realizacoes/acabamentos/acab2.jpg"),
+          require("../assets/realizacoes/acabamentos/acab3.jpg"),
+          require("../assets/realizacoes/acabamentos/acab4.jpg"),    
           
-      //   ],
+        ],
 
-      //   // 6 = acabamentos
-      //   [
-      //     require("../assets/realizacoes/acabamentos/acab1.jpg"),
-      //     require("../assets/realizacoes/acabamentos/acab2.jpg"),
-      //     require("../assets/realizacoes/acabamentos/acab3.jpg"),
-      //     require("../assets/realizacoes/acabamentos/acab4.jpg"),    
-          
-      //   ],
+        [
+        // 7 = alvenaria
+        require("../assets/realizacoes/alvenaria/alv1.jpg"),
+        require("../assets/realizacoes/alvenaria/alv1.jpg"),
 
-      //   [
-      //   // 7 = alvenaria
-      //   require("../assets/realizacoes/alvenaria/alv1.jpg"),
-      //   require("../assets/realizacoes/alvenaria/alv1.jpg"),
+        ],
 
-      //   ],
+        [
+        // 8 = pisos
+        require("../assets/realizacoes/pisos/pis1.jpg"),
+        require("../assets/realizacoes/pisos/pis2.jpg"),
+        require("../assets/realizacoes/pisos/pis3.jpg"),
+        require("../assets/realizacoes/pisos/pis4.jpg"),
+        require("../assets/realizacoes/pisos/pis5.jpg"),
 
-      //   [
-      //   // 8 = pisos
-      //   require("../assets/realizacoes/pisos/pis1.jpg"),
-      //   require("../assets/realizacoes/pisos/pis2.jpg"),
-      //   require("../assets/realizacoes/pisos/pis3.jpg"),
-      //   require("../assets/realizacoes/pisos/pis4.jpg"),
-      //   require("../assets/realizacoes/pisos/pis5.jpg"),
-
-      //   ],
+        ],
       ];
        
       this.imgs = this.imgs[numCat];
