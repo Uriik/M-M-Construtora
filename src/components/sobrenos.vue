@@ -1,5 +1,5 @@
 <template>
-  <section id="sobre" class="flex">
+  <section id="sobre" class="flex testeDeFundo">
     <div class="textoSobre flex2">
       <h1 class="titulos">sobre nós</h1>
       <p
@@ -32,6 +32,9 @@ export default {
 #sobre {
   align-items: center;
   background-color: #f7f7f7;
+  
+}
+.testeDeFundo{
   background-image: linear-gradient(to right, #f7f7f7 80%, #fff 20%);
 }
 .textoSobre {
@@ -41,10 +44,10 @@ export default {
 .fotoSobre img {
   z-index: 1;
   max-width: 25vw;
-  margin-right: 10vw;
+  margin-right: 4vw;
 }
 .bordaEspecial {
-  border: 2px solid #f7f;
+  
   padding-top: 5px;
   padding-right: 5px;
   padding-bottom: -10px;
@@ -63,7 +66,11 @@ p.blocktext {
   section#sobre {
     flex-direction: column;
     height: auto;
-    background-color: #f7f;
+    
+  }
+   #sobre{
+    
+    height: 100%;
   }
   h1.titulos {
     margin-left: 15px;
@@ -74,5 +81,8 @@ p.blocktext {
   div.flex1 {
     display: none;
   }
+ .testeDeFundo{
+    background-image: none;
+ }
 }
 </style>
