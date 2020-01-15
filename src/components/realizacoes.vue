@@ -41,7 +41,7 @@
             </div>
           </div>
 
-          <div class="test4" @click="showMultiple(3)">
+          <div class="test4">
             <img
               src="@/assets/realizacoes/caminho1415.jpg"
               class="img-figure"
@@ -141,14 +141,74 @@ export default {
       this.imgs = [
         // 0 = caça vazamento
         [
-          require("../assets/realizacoes/cacavz.jpg"),
-          "http://via.placeholder.com/500x500"
+          require("../assets/realizacoes/cacavz/caca1.jpg"),
+          require("../assets/realizacoes/cacavz/caca2.jpg"),
         ],
 
         // 1 = pintura
-        ["http://via.placeholder.com/350x150",
-        "http://via.placeholder.com/350x150"]
+        [
+          require("../assets/realizacoes/pintura/pint1.jpg"),
+          require("../assets/realizacoes/pintura/pint2.jpg"),
+          require("../assets/realizacoes/pintura/pint3.jpg"),
+          require("../assets/realizacoes/pintura/pint4.jpg"),
+          require("../assets/realizacoes/pintura/pint5.jpg"),
+          
+        ],
+        // 2 = alicerces 
+        [
+          require("../assets/realizacoes/alicerce/alice1.jpg"),
+          require("../assets/realizacoes/alicerce/alice1.jpg"),
+        ],
+
+        
+      // 3 = balela
+        [
+          require(""),
+          require("")
+          
+        ],
+        // 4 = hidraulica
+        [
+          require("../assets/realizacoes/hidraulica/hid1.jpg"),
+          require("../assets/realizacoes/hidraulica/hid2.jpg"),
+          require("../assets/realizacoes/hidraulica/hid3.jpg"), 
+          
+        ],
+
+         // 5 = elétrica
+        [
+          require("../assets/realizacoes/acabamentos/acab1.jpg"), 
+          require("../assets/realizacoes/acabamentos/acab1.jpg"),
+          
+        ],
+
+        // 6 = acabamentos
+        [
+          require("../assets/realizacoes/acabamentos/acab1.jpg"),
+          require("../assets/realizacoes/acabamentos/acab2.jpg"),
+          require("../assets/realizacoes/acabamentos/acab3.jpg"),
+          require("../assets/realizacoes/acabamentos/acab4.jpg"),    
+          
+        ],
+
+        [
+        // 7 = alvenaria
+        require("../assets/realizacoes/alvenaria/alv1.jpg"),
+        require("../assets/realizacoes/alvenaria/alv1.jpg"),
+
+        ],
+
+        [
+        // 8 = pisos
+        require("../assets/realizacoes/pisos/pis1.jpg"),
+        require("../assets/realizacoes/pisos/pis2.jpg"),
+        require("../assets/realizacoes/pisos/pis3.jpg"),
+        require("../assets/realizacoes/pisos/pis4.jpg"),
+        require("../assets/realizacoes/pisos/pis5.jpg"),
+
+        ],
       ];
+       
       this.imgs = this.imgs[numCat];
       this.index = 1; // index of imgList
       this.show();
