@@ -11,7 +11,7 @@
           </div>
           <div class="contentDescription">
             <h3 class="subTitle">caça vazamentos</h3>
-            <p>Lorem Ipsum</p>
+            <p></p>
           </div>
         </article>
       </router-link>
@@ -22,7 +22,7 @@
           </div>
           <div class="contentDescription">
             <h3 class="subTitle">reformas em geral</h3>
-            <p>Lorem Ipsum</p>
+            <p></p>
           </div>
         </article>
       </router-link>
@@ -33,7 +33,7 @@
           </div>
           <div class="contentDescription">
             <h3 class="subTitle">pinturas e texturas</h3>
-            <p>Lorem Ipsum</p>
+            <p></p>
           </div>
         </div>
       </router-link>
@@ -44,7 +44,7 @@
           </div>
           <div class="contentDescription">
             <h3 class="subTitle">contrução civil</h3>
-            <p>Lorem Ipsum</p>
+            <p></p>
           </div>
         </article>
       </router-link>
