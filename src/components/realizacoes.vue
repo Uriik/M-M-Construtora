@@ -2,7 +2,7 @@
   <section class="backgroundRe flex column center flex-start">
     <div class="flex-start">
       <div class="flex0">
-        <!-- ARRUMAR A FLEX0 -->
+        <!-- ARRUMAR A F-->
         <h1 class="titulos">realizações da empresa</h1>
       </div>
     </div>
@@ -10,13 +10,8 @@
     <div class="testando grid">
       <div>
         <!-- <button @click="showSingle">Show single picture.</button>
-        <button @click="showMultiple">Show a group of pictures.</button> -->
-        <VueEasyLightbox
-          :visible="visible"
-          :imgs="imgs"
-          :index="index"
-          @hide="handleHide"
-        ></VueEasyLightbox>
+        <button @click="showMultiple">Show a group of pictures.</button>-->
+        <VueEasyLightbox :visible="visible" :imgs="imgs" :index="index" @hide="handleHide"></VueEasyLightbox>
       </div>
       <div class>
         <div class="container-test">
@@ -42,12 +37,8 @@
           </div>
 
           <div class="test4">
-            <img
-            
-              src="@/assets/realizacoes/caminho1415.jpg" class="img-figure" />
-            <div>
-              
-            </div>
+            <img src="@/assets/realizacoes/caminho1415.jpg" class="img-figure" />
+            <div></div>
           </div>
 
           <div class="test5" @click="showMultiple(4)">
@@ -65,10 +56,7 @@
           </div>
 
           <div class="test7" @click="showMultiple(6)">
-            <img
-              src="@/assets/realizacoes/acabamentos.jpg"
-              class="img-figure"
-            />
+            <img src="@/assets/realizacoes/acabamentos.jpg" class="img-figure" />
             <div>
               <h4 class="titulo7">Acabamentos</h4>
             </div>
@@ -93,13 +81,8 @@
     <div class="mobile-list">
       <div>
         <!-- <button @click="showSingle">Show single picture.</button>
-        <button @click="showMultiple">Show a group of pictures.</button> -->
-        <VueEasyLightbox
-          :visible="visible"
-          :imgs="imgs"
-          :index="index"
-          @hide="handleHide"
-        ></VueEasyLightbox>
+        <button @click="showMultiple">Show a group of pictures.</button>-->
+        <VueEasyLightbox :visible="visible" :imgs="imgs" :index="index" @hide="handleHide"></VueEasyLightbox>
       </div>
       <article @click="showMultiple(0)">
         <h4 class>Caça Vazamentos</h4>
@@ -113,7 +96,7 @@
       <article @click="showMultiple(4)">
         <h4>Hidraulica</h4>
       </article>
-      <article @click="showMultiple(5)"> 
+      <article @click="showMultiple(5)">
         <h4>Eletrica</h4>
       </article>
       <article @click="showMultiple(6)">
@@ -153,7 +136,7 @@ export default {
         // 0 = caça vazamento
         [
           require("../assets/realizacoes/cacavz/caca1.jpg"),
-          require("../assets/realizacoes/cacavz/caca2.jpg"),
+          require("../assets/realizacoes/cacavz/caca2.jpg")
         ],
 
         // 1 = pintura
@@ -162,34 +145,27 @@ export default {
           require("../assets/realizacoes/pintura/pint2.jpg"),
           require("../assets/realizacoes/pintura/pint3.jpg"),
           require("../assets/realizacoes/pintura/pint4.jpg"),
-          require("../assets/realizacoes/pintura/pint5.jpg"),
-          
+          require("../assets/realizacoes/pintura/pint5.jpg")
         ],
-        // 2 = alicerces 
+        // 2 = alicerces
         [
           require("../assets/realizacoes/alicerce/alice1.jpg"),
-          require("../assets/realizacoes/alicerce/alice1.jpg"),
+          require("../assets/realizacoes/alicerce/alice1.jpg")
         ],
 
-        
-      // 3 = balela
-        [
-          require("../assets/realizacoes/alicerce/alice1.jpg"),
-                    
-        ],
+        // 3 = balela
+        [require("../assets/realizacoes/alicerce/alice1.jpg")],
         // 4 = hidraulica
         [
           require("../assets/realizacoes/hidraulica/hid1.jpg"),
           require("../assets/realizacoes/hidraulica/hid2.jpg"),
-          require("../assets/realizacoes/hidraulica/hid3.jpg"), 
-          
+          require("../assets/realizacoes/hidraulica/hid3.jpg")
         ],
 
-         // 5 = elétrica
+        // 5 = elétrica
         [
-          require("../assets/realizacoes/acabamentos/acab1.jpg"), 
           require("../assets/realizacoes/acabamentos/acab1.jpg"),
-          
+          require("../assets/realizacoes/acabamentos/acab1.jpg")
         ],
 
         // 6 = acabamentos
@@ -197,28 +173,25 @@ export default {
           require("../assets/realizacoes/acabamentos/acab1.jpg"),
           require("../assets/realizacoes/acabamentos/acab2.jpg"),
           require("../assets/realizacoes/acabamentos/acab3.jpg"),
-          require("../assets/realizacoes/acabamentos/acab4.jpg"),    
-          
+          require("../assets/realizacoes/acabamentos/acab4.jpg")
         ],
 
         [
-        // 7 = alvenaria
-        require("../assets/realizacoes/alvenaria/alv1.jpg"),
-        require("../assets/realizacoes/alvenaria/alv1.jpg"),
-
+          // 7 = alvenaria
+          require("../assets/realizacoes/alvenaria/alv1.jpg"),
+          require("../assets/realizacoes/alvenaria/alv1.jpg")
         ],
 
         [
-        // 8 = pisos
-        require("../assets/realizacoes/pisos/pis1.jpg"),
-        require("../assets/realizacoes/pisos/pis2.jpg"),
-        require("../assets/realizacoes/pisos/pis3.jpg"),
-        require("../assets/realizacoes/pisos/pis4.jpg"),
-        require("../assets/realizacoes/pisos/pis5.jpg"),
-
-        ],
+          // 8 = pisos
+          require("../assets/realizacoes/pisos/pis1.jpg"),
+          require("../assets/realizacoes/pisos/pis2.jpg"),
+          require("../assets/realizacoes/pisos/pis3.jpg"),
+          require("../assets/realizacoes/pisos/pis4.jpg"),
+          require("../assets/realizacoes/pisos/pis5.jpg")
+        ]
       ];
-       
+
       this.imgs = this.imgs[numCat];
       this.index = 1; // index of imgList
       this.show();
