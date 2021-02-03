@@ -41,12 +41,7 @@
       </div>
 
       <div class="flex2 bgform flex justify-content-center center">
-        <!-- <div class="bobao">
-          <p class="motivador">
-            Manda uma mensagem pra gente!
-            <br />Sua opinião é muito importante para nossa empresa.
-          </p>
-        </div>-->
+        
         <div class="flex flex0 formulario column">
           <form class="formulario-contato flex column">
             <label class="label-input">

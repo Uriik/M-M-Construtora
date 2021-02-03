@@ -1,13 +1,15 @@
 <template>
   <div class="whatsapp">
-    <a href="https://api.whatsapp.com/send?phone=5513974142011&text=Olá,%20meu%20friendo!">
+    <a
+      href="https://api.whatsapp.com/send?phone=5513974142011&text=Olá,%20meu%20friendo!"
+    >
       <img src="@/assets/ic-whatsapp.png" alt />
     </a>
   </div>
 </template>
 <script>
 export default {
-  name: "whatsapp"
+  name: "whatsapp",
 };
 </script>
 <style>
